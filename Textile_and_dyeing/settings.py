@@ -28,9 +28,22 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# 允许所有来源跨域访问（仅限开发环境！）
+# CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ORIGIN_ALLOW_ALL = True
+
+# 或仅允许特定来源（生产环境推荐）
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:8000",
+#     "https://apifox.com"
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 # Application definition
 
 INSTALLED_APPS = [
+    "corsheaders",
     "demo.apps.DemoConfig",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +54,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
