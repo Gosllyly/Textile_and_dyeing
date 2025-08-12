@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from demo.models import HistoricalResults
+
+admin.site.register(HistoricalResults)

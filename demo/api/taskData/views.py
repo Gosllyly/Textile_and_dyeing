@@ -140,7 +140,6 @@ def dyeingVatTable(request):
                 cur_page += 1
                 num = 1
 
-
     return JsonResponse({
         "success": True,
         "code": 20000,
