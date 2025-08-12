@@ -8,5 +8,6 @@ urlpatterns = [
         path('taskData/showOrderTable/', TaskDataViews.showOrderTable, name='showOrderTable'),
         path('taskData/dyeingVatTable/', TaskDataViews.dyeingVatTable, name='dyeingVatTable'),
         path('taskData/secondaryDataTable/', TaskDataViews.secondaryDataTable, name='secondaryDataTable'),
+        path('taskData/submitJson/', TaskDataViews.submitJson, name='submitJson'),
     ])),
 ]

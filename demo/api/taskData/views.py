@@ -31,19 +31,19 @@ def dateSelect(request):
         date_str = filename[:8]
         file_date = datetime.strptime(date_str, '%Y%m%d').date()
         if startDate <= file_date <= endDate:
-            matched_files.append({"orderData":filename})
+            matched_files.append(filename)
     if len(matched_files) == 0:
         return JsonResponse({
             "success": True,
             "code": 20000,
             "message": "查询结果为空",
-            "data": [matched_files]
+            "data": matched_files
         })
     else: return JsonResponse({
         "success": True,
         "code": 20000,
         "message": "成功",
-        "data": [matched_files]
+        "data": matched_files
     })
 
 
@@ -239,3 +239,12 @@ def secondaryDataTable(request):
             "data": processed_data
         }
     })
+
+@csrf_exempt
+def submitJson(request):
+    orderData = request.GET.get('orderData')
+    dyeingVatData = request.GET.get('dyeingVatData')
+    secondaryData = request.GET.get('secondaryData')
+
+    print(orderData, dyeingVatData, secondaryData)
+
