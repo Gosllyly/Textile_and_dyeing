@@ -50,28 +50,19 @@ def dateSelect(request):
 
 @csrf_exempt
 def showOrderTable(request):
-    if not request.FILES:
-        return JsonResponse({
-            "success": False,
-            "code": 20001,
-            "message": "未检测到上传文件",
-            "data": []
-        })
     page = int(request.POST.get('page'))
     pageSize = int(request.POST.get('pageSize'))
-    uploaded_file = request.FILES['orderData']
-    # 检查文件扩展名
-    if not uploaded_file.name.endswith('.json'):
+    file_name = request.POST.get('orderData')
+    file_path = './InputFiles/' + file_name
+    if not os.path.exists(file_path):
         return JsonResponse({
             "success": False,
             "code": 20001,
-            "message": "上传文件必须为json格式",
-            "data": []
+            "message": "文件不存在",
+            "data": {}
         })
-
-    # 读取并解析JSON文件
-    file_content = uploaded_file.read().decode('GBK')
-    data = json.loads(file_content)
+    with open(file_path, 'r', encoding='GBK') as file:
+        data = json.load(file)
     order = data['Order']
     processed_data = []
     num = 1
@@ -110,27 +101,19 @@ def showOrderTable(request):
 
 @csrf_exempt
 def dyeingVatTable(request):
-    if not request.FILES:
-        return JsonResponse({
-            "success": False,
-            "code": 20001,
-            "message": "未检测到上传文件",
-            "data": []
-        })
     page = int(request.POST.get('page'))
     pageSize = int(request.POST.get('pageSize'))
-    uploaded_file = request.FILES['dyeingVatData']
-    # 检查文件扩展名
-    if not uploaded_file.name.endswith('.json'):
+    file_name = request.POST.get('dyeingVatData')
+    file_path = './InputFiles/' + file_name
+    if not os.path.exists(file_path):
         return JsonResponse({
             "success": False,
             "code": 20001,
-            "message": "上传文件必须为json格式",
-            "data": []
+            "message": "文件不存在",
+            "data": {}
         })
-
-    file_content = uploaded_file.read().decode('GBK')
-    data = json.loads(file_content)
+    with open(file_path, 'r', encoding='GBK') as file:
+        data = json.load(file)
     Factory = data['Factory']
     processed_data = []
     num = 1
@@ -172,26 +155,19 @@ def dyeingVatTable(request):
 
 @csrf_exempt
 def secondaryDataTable(request):
-    if not request.FILES:
-        return JsonResponse({
-            "success": False,
-            "code": 20001,
-            "message": "未检测到上传文件",
-            "data": []
-        })
     page = int(request.POST.get('page'))
     pageSize = int(request.POST.get('pageSize'))
-    uploaded_file = request.FILES['secondaryData']
-    # 检查文件扩展名
-    if not uploaded_file.name.endswith('.json'):
+    file_name = request.POST.get('secondaryData')
+    file_path = './InputFiles/' + file_name
+    if not os.path.exists(file_path):
         return JsonResponse({
             "success": False,
             "code": 20001,
-            "message": "上传文件必须为json格式",
-            "data": []
+            "message": "文件不存在",
+            "data": {}
         })
-    file_content = uploaded_file.read().decode('GBK')
-    data = json.loads(file_content)
+    with open(file_path, 'r', encoding='GBK') as file:
+        data = json.load(file)
     Factory = data["Factory"]
     processed_data = []
     num = 1

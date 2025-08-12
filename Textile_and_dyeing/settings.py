@@ -25,18 +25,12 @@ SECRET_KEY = 'django-insecure-s#1s0ogaz$fa3h&f*my&$=5(aoby2&a2q1eh8=z(!6xb+!)nlc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
-# 允许所有来源跨域访问（仅限开发环境！）
-# CORS_ALLOW_ALL_ORIGINS = True
-# CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = ['localhost']
 
 # 或仅允许特定来源（生产环境推荐）
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:8000",
-#     "https://apifox.com"
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000"
+]
 
 CORS_ALLOW_ALL_ORIGINS = True
 

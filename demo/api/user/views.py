@@ -18,7 +18,8 @@ def UserLoginView(request):
 
         # 生成 token，SECRET_KEY 应该放在 settings.py 中
         token = jwt.encode(payload, settings.SECRET_KEY, algorithm='HS256')
-
+        token = str(token)
+        print(type(token))
         data_list = {
             "success": True,
             "code": 20000,
