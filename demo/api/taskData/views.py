@@ -57,6 +57,8 @@ def showOrderTable(request):
             "message": "未检测到上传文件",
             "data": []
         })
+    page = int(request.POST.get('page'))
+    pageSize = int(request.POST.get('pageSize'))
     uploaded_file = request.FILES['orderData']
     # 检查文件扩展名
     if not uploaded_file.name.endswith('.json'):
@@ -69,35 +71,45 @@ def showOrderTable(request):
 
     # 读取并解析JSON文件
     file_content = uploaded_file.read().decode('GBK')
-    original_data = json.loads(file_content)
-    print(original_data)
+    data = json.loads(file_content)
+    order = data['Order']
+    processed_data = []
+    num = 1
+    cur_page = 1
+    total = 0
+    for items in order:
+        for item in order[items]:
+            total = total + 1
+            cur_data = {}
+            cur_data["priority"] = item["Priority"]
+            cur_data["color"] = item["Color"]
+            cur_data["colourNumber"] = item["ColourNumber"]
+            cur_data["productionNumber"] = item["ProductionNumber"]
+            cur_data["machineCapacity"] = item["MachineCapacity"]
+            cur_data["axle"] = item["Axle"]
+            cur_data["axleNumber"] = item["AxleNumber"]
+            cur_data["num"] = num
+            if cur_page == page:
+                processed_data.append(cur_data)
+            num += 1
+            if num == pageSize + 1:
+                cur_page += 1
+                num = 1
 
-    # selected_fields = [
-    #     'order_id',
-    #     'customer_name',
-    #     'order_date',
-    #     'total_amount',
-    #     'status'
-    # ]
-    #
-    # # 构建新的JSON数据
-    # processed_data = {}
-    # for field in selected_fields:
-    #     if field in original_data:
-    #         processed_data[field] = original_data[field]
-    #     else:
-    #         processed_data[field] = None  # 或者可以设置为默认值
-    #
-    # # 返回处理后的数据
-    # return JsonResponse({
-    #     "success": True,
-    #     "message": "数据处理成功",
-    #     "data": processed_data
-    # })
+    return JsonResponse({
+        "success": True,
+        "code": 20000,
+        "message": "成功",
+        "data": {
+            "page" : page,
+            "pageSize" : pageSize,
+            "total" : total,
+            "data": processed_data
+        }
+    })
 
 @csrf_exempt
 def dyeingVatTable(request):
-    print(request.FILES)
     if not request.FILES:
         return JsonResponse({
             "success": False,
@@ -105,6 +117,8 @@ def dyeingVatTable(request):
             "message": "未检测到上传文件",
             "data": []
         })
+    page = int(request.POST.get('page'))
+    pageSize = int(request.POST.get('pageSize'))
     uploaded_file = request.FILES['dyeingVatData']
     # 检查文件扩展名
     if not uploaded_file.name.endswith('.json'):
@@ -115,13 +129,137 @@ def dyeingVatTable(request):
             "data": []
         })
 
-    # 读取并解析JSON文件
     file_content = uploaded_file.read().decode('GBK')
-    original_data = json.loads(file_content)
+    data = json.loads(file_content)
+    Factory = data['Factory']
+    processed_data = []
+    num = 1
+    cur_page = 1
+    total = 0
+    for factory in Factory:
+        machine = Factory[factory]["Machine"]
+        for items in machine:
+            total = total + 1
+            cur_data = {}
+            item = machine[items]
+            cur_data["machineId"] = item["MachineName"]
+            cur_data["machineName"] = item["MachineName"]
+            cur_data["machineClass"] = item["MachineClass"]
+            cur_data["machineType"] = item["MachineType"]
+            cur_data["color"] = item["Color"]
+            cur_data["currentStatus"] = item["CurrentStatus"]
+            cur_data["prevColor"] = item["PrevColor"]
+            cur_data["num"] = num
+            if cur_page == page:
+                processed_data.append(cur_data)
+            num += 1
+            if num == pageSize + 1:
+                cur_page += 1
+                num = 1
+
 
     return JsonResponse({
         "success": True,
         "code": 20000,
         "message": "成功",
-        "data": []
+        "data": {
+            "page" : page,
+            "pageSize" : pageSize,
+            "total" : total,
+            "data": processed_data
+        }
+    })
+
+@csrf_exempt
+def secondaryDataTable(request):
+    if not request.FILES:
+        return JsonResponse({
+            "success": False,
+            "code": 20001,
+            "message": "未检测到上传文件",
+            "data": []
+        })
+    page = int(request.POST.get('page'))
+    pageSize = int(request.POST.get('pageSize'))
+    uploaded_file = request.FILES['secondaryData']
+    # 检查文件扩展名
+    if not uploaded_file.name.endswith('.json'):
+        return JsonResponse({
+            "success": False,
+            "code": 20001,
+            "message": "上传文件必须为json格式",
+            "data": []
+        })
+    file_content = uploaded_file.read().decode('GBK')
+    data = json.loads(file_content)
+    Factory = data["Factory"]
+    processed_data = []
+    num = 1
+    cur_page = 1
+    total = 0
+    for factory in Factory:
+        SecRes = Factory[factory]["SecondaryResource"]
+        YarnFrame = SecRes["YarnFrame"]
+        for type in YarnFrame: # 纱架 蚕丝架
+            for item_name in YarnFrame[type]:
+                total += 1
+                cur_data = {}
+                item = YarnFrame[type][item_name]
+                cur_data["identifier"] = item_name
+                cur_data["type"] = type
+                cur_data["machine"] = item["Machine"]
+                cur_data["number"] = item["Number"]
+                cur_data["num"] = num
+                if cur_page == page:
+                    processed_data.append(cur_data)
+                num += 1
+                if num == pageSize + 1:
+                    cur_page += 1
+                    num = 1
+
+        AxleFrame = SecRes["AxleFrame"]
+        for type in AxleFrame: # "S" "M" "L" "Y"
+            for item_name in AxleFrame[type]:
+                total += 1
+                cur_data = {}
+                item = AxleFrame[type][item_name]
+                cur_data["identifier"] = item_name
+                cur_data["type"] = "轴架" + type
+                cur_data["machine"] = item["Machine"]
+                cur_data["number"] = item["Number"]
+                cur_data["num"] = num
+                if cur_page == page:
+                    processed_data.append(cur_data)
+                num += 1
+                if num == pageSize + 1:
+                    cur_page += 1
+                    num = 1
+
+        Axle = SecRes["Axle"]
+        for type in Axle:
+            for item in Axle[type]:
+                total += 1
+                cur_data = {}
+                cur_data["identifier"] = "轴"
+                cur_data["number"] = Axle[type][item]["Number"]
+                cur_data["type"] = type
+                cur_data["machine"] = "漂染APS轴数"
+                cur_data["num"] = num
+                if cur_page == page:
+                    processed_data.append(cur_data)
+                num += 1
+                if num == pageSize + 1:
+                    cur_page += 1
+                    num = 1
+
+    return JsonResponse({
+        "success": True,
+        "code": 20000,
+        "message": "成功",
+        "data": {
+            "page" : page,
+            "pageSize" : pageSize,
+            "total" : total,
+            "data": processed_data
+        }
     })
