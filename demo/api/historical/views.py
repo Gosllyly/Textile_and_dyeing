@@ -25,7 +25,7 @@ def query(request):
         })
 
     queryset = HistoricalResults.objects.filter(
-        create_date__date=query_date
+        date=query_date
     ).order_by('-create_date')
 
     processed_data = []
