@@ -95,7 +95,7 @@ def getProgress(request):
     total_time = 65 + (populationSize / 100 - 1) * 50
     # 根据前端传的种群数，公式：种群数100的时候，是1分05秒，每多100，就+50秒
     progress = round(timeDifference / total_time * 100,1)
-    progress = max(progress, 99.0)
+    progress = min(progress, 99.0)
     return JsonResponse({
         "success": True,
         "code": 20000,
