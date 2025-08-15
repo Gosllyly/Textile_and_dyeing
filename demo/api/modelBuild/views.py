@@ -1,6 +1,4 @@
-import os
 import threading
-from datetime import datetime
 
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -59,12 +57,14 @@ def setParam(request):
         latest_record.save()
 
     threading.Thread(target=background_task, daemon=True).start()
-
+    latest_record = HistoricalResults.objects.order_by('-id').first()
     return JsonResponse({
         "success": True,
         "code": 20000,
         "message": "模型参数设置成功，正在求解",
-        "data": []
+        "data": {
+            "id" : latest_record.id
+        }
     })
 
 

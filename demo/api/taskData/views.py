@@ -272,12 +272,15 @@ def submitJson(request):
 
 @csrf_exempt
 def resultsDisplay(request):
-    id = int(request.GET.get('id'))
     page = int(request.GET.get('page'))
     pageSize = int(request.GET.get('pageSize'))
-    try:
-        result = HistoricalResults.objects.get(id=id)
-    except HistoricalResults.DoesNotExist:
+    result = (
+        HistoricalResults.objects
+        .filter(outputFileName__isnull=False)  # 排除 NULL
+        .order_by('-id')  # 按 id 从大到小
+        .first()  # 取第一条
+    )
+    if result is None:
         return JsonResponse({
             "success": False,
             "code": 20001,
@@ -360,6 +363,7 @@ def resultsDisplay(request):
         "code": 20000,
         "message": "成功",
         "data": {
+            "id": result.id,
             "orderData": inputFile,
             "dyeingVatData": inputFile,
             "secondaryData": inputFile,
