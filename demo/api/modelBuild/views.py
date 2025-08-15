@@ -6,7 +6,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from demo.algorithm.run_model import run_model
-from demo.global_info import collected_data, modal_start_timestamp
+from demo.global_info import collected_data
 from demo.models import HistoricalResults
 
 
@@ -71,6 +71,8 @@ def setParam(request):
 @csrf_exempt
 def getProgress(request):
     id = int(request.GET.get("id"))
+    populationSize = int(request.GET.get("populationSize"))
+    timeDifference = int(request.GET.get("timeDifference"))
     try:
         result = HistoricalResults.objects.get(id=id)
     except Exception as e:
@@ -86,14 +88,20 @@ def getProgress(request):
             "code": 20000,
             "message": "模型结果计算完成！",
             "data": {
-                "progress": True
+                "progress": 100,
+                "status": True
             }
         })
+    total_time = 65 + (populationSize / 100 - 1) * 50
+    # 根据前端传的种群数，公式：种群数100的时候，是1分05秒，每多100，就+50秒
+    progress = round(timeDifference / total_time * 100,1)
+    progress = max(progress, 99.0)
     return JsonResponse({
         "success": True,
         "code": 20000,
         "message": "模型仍在计算中，请稍候！",
         "data": {
-            "progress": False
+            "progress": progress,
+            "status": False
         }
     })

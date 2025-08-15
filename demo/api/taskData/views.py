@@ -268,3 +268,108 @@ def submitJson(request):
         "message": "上传成功",
         "data": []
     })
+
+
+@csrf_exempt
+def resultsDisplay(request):
+    id = int(request.GET.get('id'))
+    page = int(request.GET.get('page'))
+    pageSize = int(request.GET.get('pageSize'))
+    try:
+        result = HistoricalResults.objects.get(id=id)
+    except HistoricalResults.DoesNotExist:
+        return JsonResponse({
+            "success": False,
+            "code": 20001,
+            "message": "传入的id未匹配到任何结果",
+            "data": []
+        })
+    modelId = result.modelId
+    inputFile = result.orderData
+    outputFile = result.outputFileName
+    input_dir = './InputFiles'
+    output_dir = './results'
+    input_file_path = os.path.join(input_dir, inputFile)
+    output_file_path = os.path.join(output_dir, outputFile)
+    with open(input_file_path, 'r', encoding='GBK') as file:
+        input_data = json.load(file)
+    with open(output_file_path, 'r', encoding='utf-8') as file:
+        output_data = json.load(file)
+
+    list = []
+    gantt = []
+
+    num = 1
+    cur_page = 1
+    total = 0
+
+    Factory = input_data["Order"]
+    for factory in Factory:
+        orders = Factory[factory]
+        for order in orders:
+            total += 1
+            cur_data = {}
+            cur_data["dyeType"] = order["Color"]
+            cur_data["orderId"] = order["OrderId"]
+            cur_data["orderStatus"] = order["OrderStatus"]
+            cur_data["machineCapacity"] = order["MachineCapacity"]
+            cur_data["machineId"] = order["MachineId"]
+            cur_data["lockJobOrder"] = order["LockJobOrder"]
+            cur_data["axle"] = order["Axle"]
+            cur_data["originalMachineId"] = order["OriginalMachineId"]
+            cur_data["processTimeId"] = order["ProcessTimeId"]
+            cur_data["processingTime"] = order["ProcessingTime"]
+            cur_data["num"] = num
+            if cur_page == page:
+                list.append(cur_data)
+            num += 1
+            if num == pageSize + 1:
+                cur_page += 1
+                num = 1
+
+    id = 0
+    for factory in output_data:
+        machines = output_data[factory]["ByMachine"]
+        for machine in machines:
+            machineId = machine
+            machine = machines[machine]
+            id += 1
+            machineCapacity = machine["MachineCapacity"]
+            gantt.append({
+                "id": id,
+                "unscheduled": True,
+                "render": "split",
+                "machineId": machineId,
+                "machineCapacity": machineCapacity,
+                "color": "暂定"
+            })
+            orders = machine["Order"]
+            for order in orders:
+                order = orders[order]
+                cur_data = {}
+                cur_data["orderId"] = order["OrderId"]
+                cur_data["start_date"] = order["StartTime"]
+                cur_data["end_date"] = order["EndTime"]
+                cur_data["parent"] = id
+                gantt.append(cur_data)
+
+
+
+    return JsonResponse({
+        "success": True,
+        "code": 20000,
+        "message": "成功",
+        "data": {
+            "orderData": inputFile,
+            "dyeingVatData": inputFile,
+            "secondaryData": inputFile,
+            "modelId": f'数学建模{modelId}',
+            "list": {
+                "page": page,
+                "pageSize": pageSize,
+                "total": total,
+                "data": list
+            },
+            "gantt": gantt
+        }
+    })
