@@ -90,8 +90,8 @@ def getProgress(request):
             }
         })
     return JsonResponse({
-        "success": False,
-        "code": 20001,
+        "success": True,
+        "code": 20000,
         "message": "模型仍在计算中，请稍候！",
         "data": {
             "progress": False

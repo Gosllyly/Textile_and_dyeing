@@ -17,5 +17,7 @@ urlpatterns = [
         path('modelBuild/setParam/', ModelBuildViews.setParam, name='setParam'),
         path('modelBuild/getProgress/', ModelBuildViews.getProgress, name='getProgress'),
         path('analysis/overdueOrder/', AnalysisViews.overdueOrder, name='overdueOrder'),
+        path('analysis/getCapacity/', AnalysisViews.getCapacity, name='getCapacity'),
+        path('analysis/survivalBarChart/', AnalysisViews.survivalBarChart, name='survivalBarChart'),
     ])),
 ]
