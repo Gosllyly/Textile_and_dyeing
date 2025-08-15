@@ -1,0 +1,59 @@
+0126
+新增Data_Extraction_from_Excel.py，用于读取excel表格数据
+新增_Decode_0125.py，用于对读取的数据解码（与之前数据结构不同
+_Decode_0125.py内，需要对函数Earliest_Start_for_waiting_job修改，以满足用不同轴数的订单的生产
+
+或更改原逻辑以满足轴数不同的需求
+
+
+0201
+将连续生产的订单合并，时间累加，累加切换时间，累加所需的副资源数
+根据合作提取订单
+（实际上不需要累加，因为完成上一个马上可以下一个，所需的还是1）
+对机器进行了区分，选择不合适的机器则将成本增加999
+
+
+0204
+提取每一条机器的生产作业，判断是否有不能连续切换的序列，存在则在切换成本上增加999
+assigned_list = [self.job_message_list[sublist[0]-1][0]['深浅色'] for sublist in self.Machines[i].assigned_task]  # 颜色列表
+occurrences = 0  # 出现不能连续生产的次数
+for tt in range(max(len(assigned_list) - len(self.non_continuous_production) + 1, 0)):
+     if assigned_list[tt:tt + len(self.non_continuous_production)] == self.non_continuous_production:
+           occurrences += 1
+total_cost += occurrences*999
+
+0220
+增加优先级排序
+两种优先级规则：
+adjust_for_priority_by_machine 在每一台机器上，按照优先级生产
+adjust_for_priority_by_color 不同颜色，按照优先级生产
+需要增加考虑：不同颜色之间的优先级如何排序
+
+0224
+增加adjust_color函数
+用于将计划调整至最佳颜色的染缸上，按照负载最小的规则选择可用机器
+增加neighbour_search函数
+用于集成adjust_for_priority_by_machine，adjust_for_priority_by_color ，adjust_color
+还需要调整算法整体寻优逻辑，将修改后得到的适应度值加入判断
+
+0228
+Data_Extraction_from_Excel_02中增加 axle_resource_num = [100, 100, 100, 100, 100]  # 轴的数量，与轴架对应
+用于表达轴的数量
+在Decode中，增加减少用轴的判断，缺少释放，缺少如果轴不够的情况
+
+0303
+修改GA_main中neighbourhood_search，改变算法逻辑
+增加acquire_condition函数，用于获得某一时刻，所有作业的状态，并获得这一时刻副资源数量
+（副资源数量也可以从Decode中的releases_resource_time获得
+需要将acquire_condition函数中输出的改为json格式
+
+v6.3
+考虑异常停机
+机器初始状态的颜色
+均衡
+
+v6.4
+新均衡逻辑
+
+v6.5
+增加log输出信息

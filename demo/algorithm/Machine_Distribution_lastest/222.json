@@ -1,0 +1,2262 @@
+{
+	"Order": {
+		"341557": [
+			{
+				"OrderId": "4602683",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403080027",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8725865",
+				"Priority": 60.0,
+				"Color": "深色",
+				"ColourNumber": "",
+				"ProcessTimeId": "6001",
+				"ProcessingTime": 425.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602867",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403090040",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8727148",
+				"Priority": 92.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "1801",
+				"ProcessingTime": 465.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602871",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403090040",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8727150",
+				"Priority": 77.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "1725",
+				"ProcessingTime": 505.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602858",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403090084",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8727099",
+				"Priority": 76.0,
+				"Color": "深色",
+				"ColourNumber": "",
+				"ProcessTimeId": "1706",
+				"ProcessingTime": 505.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603750",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403090223",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8729163",
+				"Priority": 82.0,
+				"Color": "深色",
+				"ColourNumber": "",
+				"ProcessTimeId": "5801",
+				"ProcessingTime": 480.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603751",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403090223",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8729164",
+				"Priority": 73.0,
+				"Color": "中色",
+				"ColourNumber": "",
+				"ProcessTimeId": "534",
+				"ProcessingTime": 80.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603752",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403090224",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8729169",
+				"Priority": 90.0,
+				"Color": "中色",
+				"ColourNumber": "",
+				"ProcessTimeId": "533",
+				"ProcessingTime": 80.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602839",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403120062",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8729287",
+				"Priority": 98.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "1714",
+				"ProcessingTime": 465.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603678",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403120081",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8731374",
+				"Priority": 74.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "533",
+				"ProcessingTime": 80.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603701",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403150337",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8733125",
+				"Priority": 95.0,
+				"Color": "中色",
+				"ColourNumber": "",
+				"ProcessTimeId": "1711",
+				"ProcessingTime": 425.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603218",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403110038",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8728761",
+				"Priority": 81.0,
+				"Color": "深色",
+				"ColourNumber": "",
+				"ProcessTimeId": "3902",
+				"ProcessingTime": 255.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603219",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403110038",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8728761",
+				"Priority": 99.0,
+				"Color": "深色",
+				"ColourNumber": "",
+				"ProcessTimeId": "2903",
+				"ProcessingTime": 375.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602595",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403150107",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8732127",
+				"Priority": 85.0,
+				"Color": "浅色",
+				"ColourNumber": "",
+				"ProcessTimeId": "1702",
+				"ProcessingTime": 385.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602597",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403150107",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8732128",
+				"Priority": 73.0,
+				"Color": "深色",
+				"ColourNumber": "",
+				"ProcessTimeId": "1003",
+				"ProcessingTime": 465.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602908",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403150315",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8732784",
+				"Priority": 89.0,
+				"Color": "浅色",
+				"ColourNumber": "",
+				"ProcessTimeId": "2815",
+				"ProcessingTime": 575.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602615",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403160035",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8733345",
+				"Priority": 94.0,
+				"Color": "中色",
+				"ColourNumber": "",
+				"ProcessTimeId": "2806",
+				"ProcessingTime": 565.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602616",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403160035",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8733345",
+				"Priority": 96.0,
+				"Color": "中色",
+				"ColourNumber": "",
+				"ProcessTimeId": "2806",
+				"ProcessingTime": 565.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603184",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403160035",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8733345",
+				"Priority": 85.0,
+				"Color": "中色",
+				"ColourNumber": "",
+				"ProcessTimeId": "2805",
+				"ProcessingTime": 565.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602588",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403160167",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8733443",
+				"Priority": 83.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "2804",
+				"ProcessingTime": 520.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603220",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403160167",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8733443",
+				"Priority": 88.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "2803",
+				"ProcessingTime": 520.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602651",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202402170336",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8708277",
+				"Priority": 94.0,
+				"Color": "深色",
+				"ColourNumber": "",
+				"ProcessTimeId": "2802",
+				"ProcessingTime": 475.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602996",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403030079",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8721133",
+				"Priority": 89.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "1201",
+				"ProcessingTime": 505.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602712",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403060082",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8723789",
+				"Priority": 88.0,
+				"Color": "中色",
+				"ColourNumber": "",
+				"ProcessTimeId": "2714",
+				"ProcessingTime": 500.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603279",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403120063",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8729343",
+				"Priority": 90.0,
+				"Color": "深色",
+				"ColourNumber": "",
+				"ProcessTimeId": "1004",
+				"ProcessingTime": 465.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602827",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403130022",
+				"MachineCapacity": "40",
+				"CooperativeNumber": "8729648",
+				"Priority": 65.0,
+				"Color": "增白",
+				"ColourNumber": "",
+				"ProcessTimeId": "1001",
+				"ProcessingTime": 425.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4603316",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403150293",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8732566",
+				"Priority": 75.0,
+				"Color": "增白",
+				"ColourNumber": "",
+				"ProcessTimeId": "2712",
+				"ProcessingTime": 455.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602891",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403160118",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8733483",
+				"Priority": 65.0,
+				"Color": "中色",
+				"ColourNumber": "",
+				"ProcessTimeId": "2705",
+				"ProcessingTime": 535.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602893",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403160118",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8733484",
+				"Priority": 79.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "2703",
+				"ProcessingTime": 490.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602646",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202402280080",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8716079",
+				"Priority": 73.0,
+				"Color": "深色",
+				"ColourNumber": "",
+				"ProcessTimeId": "2011",
+				"ProcessingTime": 455.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602656",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403020045",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8719060",
+				"Priority": 65.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "2703",
+				"ProcessingTime": 490.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602657",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403020045",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8719060",
+				"Priority": 70.0,
+				"Color": "浅浅",
+				"ColourNumber": "",
+				"ProcessTimeId": "1904",
+				"ProcessingTime": 375.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602806",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403030042",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8720744",
+				"Priority": 88.0,
+				"Color": "增白",
+				"ColourNumber": "",
+				"ProcessTimeId": "1805",
+				"ProcessingTime": 545.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602675",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403040012",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8721510",
+				"Priority": 90.0,
+				"Color": "增白",
+				"ColourNumber": "",
+				"ProcessTimeId": "1802",
+				"ProcessingTime": 425.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			},
+			{
+				"OrderId": "4602676",
+				"LockedState": "0",
+				"MachineId": "",
+				"ProductionNumber": "202403040012",
+				"MachineCapacity": "180",
+				"CooperativeNumber": "8721510",
+				"Priority": 86.0,
+				"Color": "增白",
+				"ColourNumber": "",
+				"ProcessTimeId": "1802",
+				"ProcessingTime": 425.0,
+				"DyeType": "染纱",
+				"Axle": "",
+				"AxleFrame": 1,
+				"AxleNumber": 0.0,
+				"FrameType": "纱架",
+				"FrameNumber": 1,
+				"OriginalMachineId": [],
+				"StarchingTime": "",
+				"OrderStatus": "未排产",
+				"ActualStartTime": "",
+				"ActualMachineId": ""
+			}
+		]
+	},
+	"Factory": {
+		"341557": {
+			"Machine": {
+				"514": {
+					"MachineName": "514",
+					"MachineClass": "3",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"515": {
+					"MachineName": "515",
+					"MachineClass": "3",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"905": {
+					"MachineName": "905",
+					"MachineClass": "3",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"916": {
+					"MachineName": "916",
+					"MachineClass": "4",
+					"MachineType": "诺赛达",
+					"Color": []
+				},
+				"907": {
+					"MachineName": "907",
+					"MachineClass": "6",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"908": {
+					"MachineName": "908",
+					"MachineClass": "6",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"815": {
+					"MachineName": "815",
+					"MachineClass": "10",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"509": {
+					"MachineName": "509",
+					"MachineClass": "10",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"603": {
+					"MachineName": "603",
+					"MachineClass": "10",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"613": {
+					"MachineName": "613",
+					"MachineClass": "10",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"704": {
+					"MachineName": "704",
+					"MachineClass": "10",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"115": {
+					"MachineName": "115",
+					"MachineClass": "24",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"116": {
+					"MachineName": "116",
+					"MachineClass": "24",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"117": {
+					"MachineName": "117",
+					"MachineClass": "24",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"118": {
+					"MachineName": "118",
+					"MachineClass": "24",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"119": {
+					"MachineName": "119",
+					"MachineClass": "24",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"712": {
+					"MachineName": "712",
+					"MachineClass": "24",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"816": {
+					"MachineName": "816",
+					"MachineClass": "24",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"1013": {
+					"MachineName": "1013",
+					"MachineClass": "24",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"1014": {
+					"MachineName": "1014",
+					"MachineClass": "24",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"209": {
+					"MachineName": "209",
+					"MachineClass": "40",
+					"MachineType": "立信",
+					"Color": [
+						"浅色"
+					]
+				},
+				"210": {
+					"MachineName": "210",
+					"MachineClass": "40",
+					"MachineType": "立信",
+					"Color": [
+						"浅浅"
+					]
+				},
+				"211": {
+					"MachineName": "211",
+					"MachineClass": "40",
+					"MachineType": "立信",
+					"Color": [
+						"增白"
+					]
+				},
+				"212": {
+					"MachineName": "212",
+					"MachineClass": "40",
+					"MachineType": "立信",
+					"Color": [
+						"深色"
+					]
+				},
+				"213": {
+					"MachineName": "213",
+					"MachineClass": "40",
+					"MachineType": "立信",
+					"Color": [
+						"中色"
+					]
+				},
+				"301": {
+					"MachineName": "301",
+					"MachineClass": "40",
+					"MachineType": "立信",
+					"Color": [
+						"浅色"
+					]
+				},
+				"711": {
+					"MachineName": "711",
+					"MachineClass": "40",
+					"MachineType": "立信",
+					"Color": [
+						"浅浅"
+					]
+				},
+				"1006": {
+					"MachineName": "1006",
+					"MachineClass": "40",
+					"MachineType": "立信",
+					"Color": [
+						"深色"
+					]
+				},
+				"1007": {
+					"MachineName": "1007",
+					"MachineClass": "40",
+					"MachineType": "立信",
+					"Color": [
+						"中色"
+					]
+				},
+				"206": {
+					"MachineName": "206",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"207": {
+					"MachineName": "207",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"208": {
+					"MachineName": "208",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"304": {
+					"MachineName": "304",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"305": {
+					"MachineName": "305",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"508": {
+					"MachineName": "508",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"606": {
+					"MachineName": "606",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"701": {
+					"MachineName": "701",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"702": {
+					"MachineName": "702",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"707": {
+					"MachineName": "707",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"817": {
+					"MachineName": "817",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"910": {
+					"MachineName": "910",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"913": {
+					"MachineName": "913",
+					"MachineClass": "70",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"507": {
+					"MachineName": "507",
+					"MachineClass": "90",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"708": {
+					"MachineName": "708",
+					"MachineClass": "90",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"710": {
+					"MachineName": "710",
+					"MachineClass": "90",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"1011": {
+					"MachineName": "1011",
+					"MachineClass": "90",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"1012": {
+					"MachineName": "1012",
+					"MachineClass": "90",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"203": {
+					"MachineName": "203",
+					"MachineClass": "140",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"204": {
+					"MachineName": "204",
+					"MachineClass": "140",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"205": {
+					"MachineName": "205",
+					"MachineClass": "140",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"302": {
+					"MachineName": "302",
+					"MachineClass": "140",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"303": {
+					"MachineName": "303",
+					"MachineClass": "140",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"609": {
+					"MachineName": "609",
+					"MachineClass": "140",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"610": {
+					"MachineName": "610",
+					"MachineClass": "140",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"611": {
+					"MachineName": "611",
+					"MachineClass": "140",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"612": {
+					"MachineName": "612",
+					"MachineClass": "140",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"308": {
+					"MachineName": "308",
+					"MachineClass": "180",
+					"MachineType": "TIS",
+					"Color": [
+						"中色"
+					]
+				},
+				"405": {
+					"MachineName": "405",
+					"MachineClass": "180",
+					"MachineType": "TIS",
+					"Color": [
+						"浅色"
+					]
+				},
+				"407": {
+					"MachineName": "407",
+					"MachineClass": "180",
+					"MachineType": "TIS",
+					"Color": [
+						"浅浅"
+					]
+				},
+				"410": {
+					"MachineName": "410",
+					"MachineClass": "180",
+					"MachineType": "TIS",
+					"Color": [
+						"深色"
+					]
+				},
+				"1107": {
+					"MachineName": "1107",
+					"MachineClass": "180",
+					"MachineType": "TIS",
+					"Color": [
+						"深色"
+					]
+				},
+				"505": {
+					"MachineName": "505",
+					"MachineClass": "180",
+					"MachineType": "立信",
+					"Color": [
+						"中色"
+					]
+				},
+				"501": {
+					"MachineName": "501",
+					"MachineClass": "180",
+					"MachineType": "立信",
+					"Color": [
+						"深色"
+					]
+				},
+				"605": {
+					"MachineName": "605",
+					"MachineClass": "180",
+					"MachineType": "立信",
+					"Color": [
+						"增白"
+					]
+				},
+				"909": {
+					"MachineName": "909",
+					"MachineClass": "180",
+					"MachineType": "立信",
+					"Color": [
+						"浅浅"
+					]
+				},
+				"1004": {
+					"MachineName": "1004",
+					"MachineClass": "180",
+					"MachineType": "立信",
+					"Color": [
+						"增白"
+					]
+				},
+				"604": {
+					"MachineName": "604",
+					"MachineClass": "200",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"516": {
+					"MachineName": "516",
+					"MachineClass": "200",
+					"MachineType": "新立信",
+					"Color": []
+				},
+				"408": {
+					"MachineName": "408",
+					"MachineClass": "200",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"409": {
+					"MachineName": "409",
+					"MachineClass": "200",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"310": {
+					"MachineName": "310",
+					"MachineClass": "200",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"504": {
+					"MachineName": "504",
+					"MachineClass": "200",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"820": {
+					"MachineName": "820",
+					"MachineClass": "220",
+					"MachineType": "诺赛达",
+					"Color": []
+				},
+				"309": {
+					"MachineName": "309",
+					"MachineClass": "240",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"312": {
+					"MachineName": "312",
+					"MachineClass": "240",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"1003": {
+					"MachineName": "1003",
+					"MachineClass": "240",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"1110": {
+					"MachineName": "1110",
+					"MachineClass": "240",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"406": {
+					"MachineName": "406",
+					"MachineClass": "240",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"608": {
+					"MachineName": "608",
+					"MachineClass": "240",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"1106": {
+					"MachineName": "1106",
+					"MachineClass": "240",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"808": {
+					"MachineName": "808",
+					"MachineClass": "241",
+					"MachineType": "日阪",
+					"Color": []
+				},
+				"404": {
+					"MachineName": "404",
+					"MachineClass": "360",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"503": {
+					"MachineName": "503",
+					"MachineClass": "360",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"917": {
+					"MachineName": "917",
+					"MachineClass": "360",
+					"MachineType": "新立信",
+					"Color": []
+				},
+				"919": {
+					"MachineName": "919",
+					"MachineClass": "360",
+					"MachineType": "新立信",
+					"Color": []
+				},
+				"819": {
+					"MachineName": "819",
+					"MachineClass": "370",
+					"MachineType": "诺赛达",
+					"Color": []
+				},
+				"705": {
+					"MachineName": "705",
+					"MachineClass": "390",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"1105": {
+					"MachineName": "1105",
+					"MachineClass": "390",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"1103": {
+					"MachineName": "1103",
+					"MachineClass": "390",
+					"MachineType": "立信",
+					"Color": []
+				},
+				"1112": {
+					"MachineName": "1112",
+					"MachineClass": "390",
+					"MachineType": "新立信",
+					"Color": []
+				},
+				"402": {
+					"MachineName": "402",
+					"MachineClass": "540",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"602": {
+					"MachineName": "602",
+					"MachineClass": "540",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"1101": {
+					"MachineName": "1101",
+					"MachineClass": "540",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"401": {
+					"MachineName": "401",
+					"MachineClass": "650",
+					"MachineType": "TIS",
+					"Color": []
+				},
+				"601": {
+					"MachineName": "601",
+					"MachineClass": "650",
+					"MachineType": "TIS",
+					"Color": []
+				}
+			},
+			"SecondaryResource": {
+				"YarnFrame": {
+					"纱架": {
+						"sj-3kg-001": {
+							"Machine": [
+								"514"
+							],
+							"Number": 1
+						},
+						"sj-3kg-002": {
+							"Machine": [
+								"515"
+							],
+							"Number": 1
+						},
+						"sj-3kg-003": {
+							"Machine": [
+								"905"
+							],
+							"Number": 1
+						},
+						"sj-4kg-004": {
+							"Machine": [
+								"916"
+							],
+							"Number": 1
+						},
+						"sj-6kg-005": {
+							"Machine": [
+								"907"
+							],
+							"Number": 1
+						},
+						"sj-6kg-006": {
+							"Machine": [
+								"908"
+							],
+							"Number": 1
+						},
+						"sj-10kg-007": {
+							"Machine": [
+								"815"
+							],
+							"Number": 1
+						},
+						"sj-10kg-008": {
+							"Machine": [
+								"509"
+							],
+							"Number": 1
+						},
+						"sj-10kg-009": {
+							"Machine": [
+								"603"
+							],
+							"Number": 1
+						},
+						"sj-10kg-010": {
+							"Machine": [
+								"613"
+							],
+							"Number": 1
+						},
+						"sj-10kg-011": {
+							"Machine": [
+								"704"
+							],
+							"Number": 1
+						},
+						"sj-24kg-013": {
+							"Machine": [
+								"1013",
+								"1014",
+								"115",
+								"116",
+								"117",
+								"118",
+								"119",
+								"712",
+								"816"
+							],
+							"Number": 14
+						},
+						"sj-40kg-014": {
+							"Machine": [
+								"1006",
+								"1007",
+								"209",
+								"210",
+								"211",
+								"212",
+								"213",
+								"301",
+								"711"
+							],
+							"Number": 10
+						},
+						"sj-70kg-018": {
+							"Machine": [
+								"206",
+								"207",
+								"208",
+								"304",
+								"305",
+								"508",
+								"606",
+								"701",
+								"702",
+								"707",
+								"817",
+								"910",
+								"913"
+							],
+							"Number": 13
+						},
+						"sj-90kg-022": {
+							"Machine": [
+								"1011",
+								"1012",
+								"507",
+								"708",
+								"710"
+							],
+							"Number": 5
+						},
+						"sj-140kg-026": {
+							"Machine": [
+								"203",
+								"204",
+								"205",
+								"302",
+								"303",
+								"609",
+								"610",
+								"611",
+								"612"
+							],
+							"Number": 10
+						},
+						"sj-180kg-031": {
+							"Machine": [
+								"1107",
+								"308",
+								"405",
+								"407",
+								"410"
+							],
+							"Number": 6
+						},
+						"sj-180kg-036": {
+							"Machine": [
+								"1004",
+								"501",
+								"505",
+								"605",
+								"909"
+							],
+							"Number": 8
+						},
+						"sj-200kg-041": {
+							"Machine": [
+								"604"
+							],
+							"Number": 2
+						},
+						"sj-200kg-044": {
+							"Machine": [
+								"516"
+							],
+							"Number": 2
+						},
+						"sj-200kg-048": {
+							"Machine": [
+								"310",
+								"408",
+								"409",
+								"504"
+							],
+							"Number": 5
+						},
+						"sj-220kg-049": {
+							"Machine": [
+								"820"
+							],
+							"Number": 2
+						},
+						"sj-240kg-054": {
+							"Machine": [
+								"1003",
+								"1110",
+								"309",
+								"312",
+								"406",
+								"608"
+							],
+							"Number": 7
+						},
+						"sj-240kg-058": {
+							"Machine": [
+								"1106"
+							],
+							"Number": 3
+						},
+						"sj-241kg-059": {
+							"Machine": [
+								"808"
+							],
+							"Number": 1
+						},
+						"sj-360kg-063": {
+							"Machine": [
+								"503",
+								"404"
+							],
+							"Number": 4
+						},
+						"sj-370kg-064": {
+							"Machine": [
+								"819"
+							],
+							"Number": 2
+						},
+						"sj-360kg-068": {
+							"Machine": [
+								"917",
+								"919"
+							],
+							"Number": 2
+						},
+						"sj-390kg-072": {
+							"Machine": [
+								"1105",
+								"705"
+							],
+							"Number": 3
+						},
+						"sj-390kg-076": {
+							"Machine": [
+								"1103"
+							],
+							"Number": 2
+						},
+						"sj-390kg-078": {
+							"Machine": [
+								"1112"
+							],
+							"Number": 2
+						},
+						"sj-540kg-080": {
+							"Machine": [
+								"1101",
+								"402",
+								"602"
+							],
+							"Number": 1
+						}
+					},
+					"蚕丝架": {
+						"sj-70kg-019": {
+							"Machine": [
+								"206",
+								"207",
+								"208",
+								"304",
+								"305",
+								"508",
+								"606",
+								"701",
+								"702",
+								"707",
+								"817",
+								"910",
+								"913"
+							],
+							"Number": 1
+						}
+					}
+				},
+				"AxleFrame": {
+					"S": {
+						"zj-10kg-012": {
+							"Machine": [
+								"509",
+								"603",
+								"613",
+								"704",
+								"815"
+							],
+							"Number": 2
+						},
+						"zj-40kg-015": {
+							"Machine": [
+								"1006",
+								"1007",
+								"209",
+								"210",
+								"211",
+								"212",
+								"213",
+								"301",
+								"711"
+							],
+							"Number": 4
+						},
+						"zj-70kg-020": {
+							"Machine": [
+								"206",
+								"207",
+								"208",
+								"304",
+								"305",
+								"508",
+								"606",
+								"701",
+								"702",
+								"707",
+								"817",
+								"910",
+								"913"
+							],
+							"Number": 7
+						},
+						"zj-90kg-024": {
+							"Machine": [
+								"1011",
+								"1012",
+								"507",
+								"708",
+								"710"
+							],
+							"Number": 3
+						},
+						"zj-140kg-027": {
+							"Machine": [
+								"203",
+								"204",
+								"205",
+								"302",
+								"303",
+								"609",
+								"610",
+								"611",
+								"612"
+							],
+							"Number": 6
+						},
+						"zj-180kg-032": {
+							"Machine": [
+								"407",
+								"308",
+								"405",
+								"410",
+								"1107"
+							],
+							"Number": 4
+						},
+						"zj-180kg-037": {
+							"Machine": [
+								"1004",
+								"501",
+								"505",
+								"605",
+								"909"
+							],
+							"Number": 4
+						},
+						"zj-200kg-045": {
+							"Machine": [
+								"516"
+							],
+							"Number": 1
+						},
+						"zj-200kg-220kg-050": {
+							"Machine": [
+								"820",
+								"409",
+								"408",
+								"310",
+								"504"
+							],
+							"Number": 1
+						}
+					},
+					"M": {
+						"zj-40kg-016": {
+							"Machine": [
+								"1006",
+								"1007",
+								"209",
+								"210",
+								"211",
+								"212",
+								"213",
+								"301",
+								"711"
+							],
+							"Number": 1
+						},
+						"zj-70kg-021": {
+							"Machine": [
+								"206",
+								"207",
+								"208",
+								"304",
+								"305",
+								"508",
+								"606",
+								"701",
+								"702",
+								"707",
+								"817",
+								"910",
+								"913"
+							],
+							"Number": 8
+						},
+						"zj-90kg-025": {
+							"Machine": [
+								"1011",
+								"1012",
+								"507",
+								"708",
+								"710"
+							],
+							"Number": 4
+						},
+						"zj-140kg-028": {
+							"Machine": [
+								"203",
+								"204",
+								"205",
+								"302",
+								"303",
+								"609",
+								"610",
+								"611",
+								"612"
+							],
+							"Number": 4
+						},
+						"zj-180kg-033": {
+							"Machine": [
+								"407",
+								"308",
+								"405",
+								"410",
+								"1107"
+							],
+							"Number": 1
+						},
+						"zj-180kg-038": {
+							"Machine": [
+								"1004",
+								"501",
+								"505",
+								"605",
+								"909"
+							],
+							"Number": 2
+						},
+						"zj-200kg-042": {
+							"Machine": [
+								"604"
+							],
+							"Number": 1
+						},
+						"zj-200kg-046": {
+							"Machine": [
+								"516"
+							],
+							"Number": 1
+						},
+						"zj-200kg-220kg-051": {
+							"Machine": [
+								"820",
+								"409",
+								"408",
+								"310",
+								"504"
+							],
+							"Number": 2
+						},
+						"zj-240kg-055": {
+							"Machine": [
+								"1003",
+								"1110",
+								"309",
+								"312",
+								"406",
+								"608"
+							],
+							"Number": 3
+						},
+						"zj-241kg-060": {
+							"Machine": [
+								"808"
+							],
+							"Number": 1
+						},
+						"zj-360kg-370kg-065": {
+							"Machine": [
+								"819",
+								"404",
+								"503"
+							],
+							"Number": 2
+						},
+						"zj-360kg-069": {
+							"Machine": [
+								"917",
+								"919"
+							],
+							"Number": 1
+						}
+					},
+					"L": {
+						"zj-40kg-017": {
+							"Machine": [
+								"1006",
+								"1007",
+								"209",
+								"210",
+								"211",
+								"212",
+								"213",
+								"301",
+								"711"
+							],
+							"Number": 2
+						},
+						"zj-140kg-030": {
+							"Machine": [
+								"203",
+								"204",
+								"205",
+								"302",
+								"303",
+								"609",
+								"610",
+								"611",
+								"612"
+							],
+							"Number": 4
+						},
+						"zj-180kg-035": {
+							"Machine": [
+								"407",
+								"308",
+								"405",
+								"410",
+								"1107"
+							],
+							"Number": 2
+						},
+						"zj-180kg-040": {
+							"Machine": [
+								"1004",
+								"501",
+								"505",
+								"605",
+								"909"
+							],
+							"Number": 2
+						},
+						"zj-200kg-043": {
+							"Machine": [
+								"604"
+							],
+							"Number": 2
+						},
+						"zj-200kg-047": {
+							"Machine": [
+								"516"
+							],
+							"Number": 1
+						},
+						"zj-200kg-220kg-053": {
+							"Machine": [
+								"820",
+								"409",
+								"408",
+								"310",
+								"504"
+							],
+							"Number": 3
+						},
+						"zj-240kg-057": {
+							"Machine": [
+								"1003",
+								"1110",
+								"309",
+								"312",
+								"406",
+								"608"
+							],
+							"Number": 5
+						},
+						"zj-241kg-062": {
+							"Machine": [
+								"808"
+							],
+							"Number": 1
+						},
+						"zj-360kg-370kg-067": {
+							"Machine": [
+								"819",
+								"404",
+								"503"
+							],
+							"Number": 2
+						},
+						"zj-360kg-071": {
+							"Machine": [
+								"917",
+								"919"
+							],
+							"Number": 2
+						},
+						"zj-390kg-074": {
+							"Machine": [
+								"1105",
+								"705"
+							],
+							"Number": 4
+						},
+						"zj-390kg-077": {
+							"Machine": [
+								"1103"
+							],
+							"Number": 1
+						},
+						"zj-390kg-079": {
+							"Machine": [
+								"1112"
+							],
+							"Number": 1
+						},
+						"zj-540kg-082": {
+							"Machine": [
+								"1101",
+								"402",
+								"602"
+							],
+							"Number": 5
+						},
+						"zj-650kg-083": {
+							"Machine": [
+								"401",
+								"601"
+							],
+							"Number": 4
+						}
+					},
+					"Y": {
+						"zj-140kg-029": {
+							"Machine": [
+								"203",
+								"204",
+								"205",
+								"302",
+								"303",
+								"609",
+								"610",
+								"611",
+								"612"
+							],
+							"Number": 2
+						},
+						"zj-180kg-034": {
+							"Machine": [
+								"407",
+								"308",
+								"405",
+								"410",
+								"1107"
+							],
+							"Number": 2
+						},
+						"zj-180kg-039": {
+							"Machine": [
+								"1004",
+								"501",
+								"505",
+								"605",
+								"909"
+							],
+							"Number": 2
+						},
+						"zj-200kg-220kg-052": {
+							"Machine": [
+								"820",
+								"409",
+								"408",
+								"310",
+								"504"
+							],
+							"Number": 2
+						},
+						"zj-240kg-056": {
+							"Machine": [
+								"1003",
+								"1110",
+								"309",
+								"312",
+								"406",
+								"608"
+							],
+							"Number": 2
+						},
+						"zj-241kg-061": {
+							"Machine": [
+								"808"
+							],
+							"Number": 1
+						},
+						"zj-360kg-370kg-066": {
+							"Machine": [
+								"819",
+								"404",
+								"503"
+							],
+							"Number": 2
+						},
+						"zj-360kg-070": {
+							"Machine": [
+								"917",
+								"919"
+							],
+							"Number": 1
+						},
+						"zj-390kg-073": {
+							"Machine": [
+								"1105",
+								"705"
+							],
+							"Number": 3
+						},
+						"zj-540kg-081": {
+							"Machine": [
+								"1101",
+								"402",
+								"602"
+							],
+							"Number": 2
+						}
+					},
+					"G": {
+						"zj-390kg-075": {
+							"Machine": [
+								"1105",
+								"705"
+							],
+							"Number": 1
+						}
+					}
+				},
+				"Axle": {
+					"S": {
+						"漂染APS轴数": {
+							"Number": 500
+						}
+					},
+					"M": {
+						"漂染APS轴数": {
+							"Number": 500
+						}
+					},
+					"Y": {
+						"漂染APS轴数": {
+							"Number": 500
+						}
+					},
+					"L": {
+						"漂染APS轴数": {
+							"Number": 500
+						}
+					},
+					"G": {
+						"漂染APS轴数": {
+							"Number": 50
+						}
+					}
+				}
+			}
+		}
+	},
+	"Rule": {
+		"YarnSwitchTime": 2.0,
+		"AxleSwitchTime": 1.0,
+		"Preprocessing": 2.0,
+		"SwitchCost": {
+			"深色": [
+				0,
+				10,
+				99999,
+				99999,
+				99999
+			],
+			"中色": [
+				10,
+				0,
+				10,
+				50,
+				99999
+			],
+			"浅色": [
+				10,
+				10,
+				0,
+				10,
+				50
+			],
+			"浅浅": [
+				10,
+				50,
+				10,
+				0,
+				50
+			],
+			"增白": [
+				10,
+				99999,
+				99999,
+				99999,
+				0
+			]
+		}
+	}
+}

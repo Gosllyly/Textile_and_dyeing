@@ -1,10 +1,10 @@
 import json
 import os
-from datetime import datetime
+from datetime import datetime, date
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-
-from demo.algorithm.run_model import run_model
+from demo.global_info import collected_data
+from demo.models import HistoricalResults
 
 
 @csrf_exempt
@@ -243,23 +243,23 @@ def secondaryDataTable(request):
 @csrf_exempt
 def submitJson(request):
     orderData = request.GET.get('orderData')
+
+    HistoricalResults.objects.create(
+        date=date.today(),
+        orderData = orderData,
+        dyeingVatData = orderData,
+        secondaryData = orderData
+    )
+
     base_dir = os.path.dirname(os.path.abspath(__file__))  # 当前脚本所在目录
     path = os.path.join(base_dir, "../../../", "InputFiles/")
     path_file = path + orderData
+    collected_data["path_file"] = path_file
     if not os.path.exists(path_file):
         return JsonResponse({
             "success": False,
             "code": 20001,
             "message": "文件不存在",
-            "data": []
-        })
-    try:
-        run_model(path_file)
-    except Exception as e:
-        return JsonResponse({
-            "success": False,
-            "code": 20001,
-            "message": "上传失败",
             "data": []
         })
     return JsonResponse({
@@ -268,5 +268,3 @@ def submitJson(request):
         "message": "上传成功",
         "data": []
     })
-
-
