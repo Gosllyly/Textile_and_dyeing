@@ -20,5 +20,6 @@ urlpatterns = [
         path('analysis/getCapacity/', AnalysisViews.getCapacity, name='getCapacity'),
         path('analysis/survivalBarChart/', AnalysisViews.survivalBarChart, name='survivalBarChart'),
         path('taskData/resultsDisplay/', TaskDataViews.resultsDisplay, name='resultsDisplay'),
+        path('modelBuild/getHistoryData/', ModelBuildViews.getHistoryData, name='getHistoryData'),
     ])),
 ]

@@ -4,12 +4,19 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from demo.algorithm.run_model import run_model
-from demo.global_info import collected_data
+from demo.global_info import collected_data, is_model_running
 from demo.models import HistoricalResults
 
 
 @csrf_exempt
 def setParam(request):
+    if is_model_running:
+        return JsonResponse({
+            "success": False,
+            "code": 20001,
+            "message": "当前有模型正在运算，请稍后！",
+            "data": []
+        })
     try:
         collected_data["populationSize"] = int(request.GET.get("populationSize"))
         collected_data["iterationNumber"] = int(request.GET.get("iterationNumber"))
@@ -34,7 +41,9 @@ def setParam(request):
         })
 
     def background_task():
+        global is_model_running
         data = collected_data
+        is_model_running = True
         output_file = run_model(
             data["populationSize"], data["crossoverRate"],
             data["mutationRate"], data["nElite"],
@@ -55,6 +64,8 @@ def setParam(request):
         latest_record.modelId = modelId
         latest_record.outputFileName = output_file
         latest_record.save()
+        is_model_running = False
+        del data["path_file"]
 
     threading.Thread(target=background_task, daemon=True).start()
     latest_record = HistoricalResults.objects.order_by('-id').first()
@@ -104,4 +115,23 @@ def getProgress(request):
             "progress": progress,
             "status": False
         }
+    })
+
+@csrf_exempt
+def getHistoryData(request):
+    try:
+        latest_record = HistoricalResults.objects.order_by('-id').first()
+    except Exception as e:
+        return JsonResponse({
+            "success": False,
+            "code": 20001,
+            "message": "未找到数据",
+            "data": []
+        })
+    input_file = latest_record.orderData
+    return JsonResponse({
+        "success": True,
+        "code": 20000,
+        "message": "成功",
+        "data": [input_file]
     })

@@ -330,21 +330,26 @@ def resultsDisplay(request):
                 cur_page += 1
                 num = 1
 
+    input_machines = {}
+    Factory = input_data["Factory"]
+    for factory in Factory:
+        input_machines = Factory[factory]["Machine"]
     id = 0
     for factory in output_data:
         machines = output_data[factory]["ByMachine"]
         for machine in machines:
             machineId = machine
-            machine = machines[machine]
+            machine = machines[machineId]
             id += 1
             machineCapacity = machine["MachineCapacity"]
+            color = input_machines[machineId]["Color"][0]
             gantt.append({
                 "id": id,
                 "unscheduled": True,
                 "render": "split",
                 "machineId": machineId,
                 "machineCapacity": machineCapacity,
-                "color": "暂定"
+                "color": color
             })
             orders = machine["Order"]
             for order in orders:
