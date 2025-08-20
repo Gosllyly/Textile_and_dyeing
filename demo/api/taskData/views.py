@@ -1,6 +1,8 @@
 import json
 import os
 from datetime import datetime, date
+
+from django.db.models.expressions import result
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from demo.global_info import collected_data
@@ -272,21 +274,34 @@ def submitJson(request):
 
 @csrf_exempt
 def resultsDisplay(request):
+    id = request.GET.get('id')
     page = int(request.GET.get('page'))
     pageSize = int(request.GET.get('pageSize'))
-    result = (
-        HistoricalResults.objects
-        .filter(outputFileName__isnull=False)  # 排除 NULL
-        .order_by('-id')  # 按 id 从大到小
-        .first()  # 取第一条
-    )
-    if result is None:
-        return JsonResponse({
-            "success": False,
-            "code": 20001,
-            "message": "传入的id未匹配到任何结果",
-            "data": []
-        })
+    if id:
+        print(f"ID = {id}")
+        result = HistoricalResults.objects.filter(id=id).first()
+        if result is None:
+            return JsonResponse({
+                "success": False,
+                "code": 20001,
+                "message": "传入id未匹配到任何数据",
+                "data": []
+            })
+    else:
+        print(f"无id ID = {id}")
+        result = (
+            HistoricalResults.objects
+            .filter(outputFileName__isnull=False)  # 排除 NULL
+            .order_by('-id')  # 按 id 从大到小
+            .first()  # 取第一条
+        )
+        if result is None:
+            return JsonResponse({
+                "success": False,
+                "code": 20001,
+                "message": "最近暂无记录可显示",
+                "data": []
+            })
     modelId = result.modelId
     inputFile = result.orderData
     outputFile = result.outputFileName
