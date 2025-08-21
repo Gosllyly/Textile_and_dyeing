@@ -75,6 +75,9 @@ def showOrderTable(request):
         for item in order[items]:
             total = total + 1
             cur_data = {}
+            cur_data["orderId"] = item["OrderId"]
+            cur_data["lockedState"] = item["LockedState"]
+            cur_data["machineId"] = item["MachineId"]
             cur_data["priority"] = item["Priority"]
             cur_data["color"] = item["Color"]
             cur_data["colourNumber"] = item["ColourNumber"]
